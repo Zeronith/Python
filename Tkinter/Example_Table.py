@@ -35,22 +35,6 @@ Entry(zuun_tal, textvariable=nas).grid(row=2, column=1)
 Label(zuun_tal, text="Утас:").grid(row=3, column=0)
 Entry(zuun_tal, textvariable=utas).grid(row=3, column=1)
 
-
-table = ttk.Treeview(barun_tal,
-                     columns=("Овог", "Нэр", "Нас", "Утас"),
-                     selectmode="extended", height=500)
-table.heading('Овог', text="Овог", anchor=W)
-table.heading('Нэр', text="Нэр", anchor=W)
-table.heading('Нас', text="Нас", anchor=W)
-table.heading('Утас', text="Утас", anchor=W)
-table.column('#0', stretch=NO, minwidth=0, width=0)
-table.column('#1', stretch=NO, minwidth=0, width=150)
-table.column('#2', stretch=NO, minwidth=0, width=150)
-table.column('#3', stretch=NO, minwidth=0, width=100)
-table.column('#4', stretch=NO, minwidth=0, width=300)
-window.mainloop()
-table.insert('', 'end', values=("Bat", "Dorj", "26", "89895623"))
-
 def save():
     if owog.get() == '' or ner.get() == '' or nas.get() == '' or utas.get() == '':
         messagebox.showwarning("Анхаар", "Хоосон байж болохгүй")
@@ -70,6 +54,21 @@ def cancel():
     utas.set('')
     print(table)
 
+
+table = ttk.Treeview(barun_tal,
+                    columns=("Овог", "Нэр", "Нас", "Утас"),
+                    selectmode="extended", height=500)
+table.heading('Овог', text="Овог", anchor=W)
+table.heading('Нэр', text="Нэр", anchor=W)
+table.heading('Нас', text="Нас", anchor=W)
+table.heading('Утас', text="Утас", anchor=W)
+table.column('#0', stretch=NO, minwidth=0, width=0)
+table.column('#1', stretch=NO, minwidth=0, width=150)
+table.column('#2', stretch=NO, minwidth=0, width=150)
+table.column('#3', stretch=NO, minwidth=0, width=100)
+table.column('#4', stretch=NO, minwidth=0, width=300)
+table.pack()
+table.insert('', 'end', values=("Bat", "Dorj", "26", "89895623"))
 Button(zuun_tal, text="Хадгалах", command=save).grid(row=4, column=0)
 Button(zuun_tal, text="Цуцлах", command=cancel).grid(row=4, column=1)
 
