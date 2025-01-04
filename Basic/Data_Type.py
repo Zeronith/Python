@@ -17,3 +17,4 @@ print(b)
 # a болон b тооны төрлийг хэвлэх
 print(type(a))
 print(type(b))
+

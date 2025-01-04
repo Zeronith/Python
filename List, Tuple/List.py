@@ -23,9 +23,8 @@ print(len(listcopy2)) # Prints number of element in the list
 listcopy2.reverse() # Reversing the order of list element 
 print(listcopy2) 
 
-for x in cars : # Printing all element of cars list
-    print(x)
-
+for car in cars : # Printing all element of cars list
+    print(car)
 if "orange" in listcopy1 : # Checking if orange is in listcopy1
     print("orange байна")
 else :
