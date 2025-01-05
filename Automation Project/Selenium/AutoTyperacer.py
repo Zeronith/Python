@@ -12,6 +12,6 @@ full_text = spans[0].text + spans[1].text + " " +spans[2].text
 input_field = browser.find_element(By.CLASS_NAME, "txtInput")
 sleep(5)
 for text in full_text :
-    input_field.send_keys(text) # 
+    input_field.send_keys(text) # If u want to make it faster , just import pyautogui.typewrite. (Its better since u can configure interval between character)
     print(text)
 input("Write quit if u want to close window")
