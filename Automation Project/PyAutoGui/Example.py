@@ -14,5 +14,17 @@ pyautogui.click(950,30) # Moves to given coordinate and click
 
 
 pyautogui.move(400,0) # Move the mouse 400 pixels to right of its current position 
-pyautogui.doubleClick() # Double click the mouse
-pyautogui.move(500, 500, duration=2, tween=pyautogui.easeInOutQuad)
+#pyautogui.doubleClick() # Double click the mouse
+pyautogui.moveTo(500, 500, duration=2, tween=pyautogui.easeInOutQuad) # Moving mouse swiftly to given coordition over 2 second\
+
+pyautogui.write("Hello world!", interval=0.25) # Type with pause with 0.25 sec in each key
+pyautogui.press("esc") # Press Esc button
+pyautogui.press("enter") # Press Enter button
+pyautogui.moveTo(2000, 700)
+
+with pyautogui.hold("shift") : # Press and hold (Shift Key)
+    pyautogui.press('left') # Pressing left while holding shift
+
+pyautogui.hotkey("ctrl", "c") # Press the Ctrl+C hotkey combination
+
+pyautogui.alert("this is message to display") # Make alert box appear and pause program until Ok is clicked
