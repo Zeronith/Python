@@ -9,3 +9,18 @@ while(1) :
     if width == 0 or height ==0 : # Checking pause condition
         break # Stopping the program
 # To stop move your mouse to one of two top corners 
+
+
+
+
+
+
+
+                                      #.
+         
+
+
+
+
+
+                                                                                       #.

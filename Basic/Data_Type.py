@@ -6,12 +6,12 @@ print(type(x))
 print(type(y))
 
 # int төрлийг float төрөлт хөрвүүлэх
-a = float(x)
+a = float(x) # 1.0
 
 # float төрлийг int төрөлт хөрвүүлэх
-b = int(y)
+b = int(y) # 2
 
-print(a)
+print(a) 
 print(b)
 
 # a болон b тооны төрлийг хэвлэх

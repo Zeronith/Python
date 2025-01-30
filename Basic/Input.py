@@ -23,7 +23,7 @@ print("Нэр: " + ner + " , " + "Нас: " + nas)
 """
 
 # Python 3
-var1, var2 = [for x in input().split() int(x) ]
+var1, var2 = [ for x in input().split() int(x) ]
 print(var1 + var2)
 # Python 2
 #var1, var2 = [int(x) for x in raw_input().split()]
