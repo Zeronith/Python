@@ -1,6 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from pyautogui import screenshot
+import time
 import pyautogui
 driver = webdriver.Chrome()
 
@@ -24,6 +25,8 @@ print("Current page title:", driver.title)
 handles = driver.window_handles
 driver.switch_to.window(handles[1])
 print("Current page title:", driver.title)
+time.sleep(5)
 grade_button = driver.find_element(By.LINK_TEXT, "Дүнгийн мэдээлэл")
 grade_button.click()
 pyautogui.scroll(4)
+time.sleep(15)
